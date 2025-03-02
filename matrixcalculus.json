@@ -36,5 +36,19 @@
       "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
       "tags": ["hi"]
     }
+  },
+  {
+    "group": "nodes",
+    "data": {
+      "id": "matrixcalculus3",
+      "label": "Vector Functions",
+      "parent": "matrixcalculus",
+      "nodeType": "video",
+      "tier": "free",
+      "type": "definition",
+      "author": ["AInokoji"],
+      "link": "https://google.com",
+      "tags": ["bro"]
+    }
   }
 ]
