@@ -1,26 +1,53 @@
-[
-  {
-    "group": "nodes",
-    "data": {
-      "id": "calculus",
-      "label": "Calculus",
-      "nodeType": "topic",
-      "tier": "free",
-      "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr"
+{
+  "$schema": "./_schema.json",
+  "elements": [
+    {
+      "group": "nodes",
+      "data": {
+        "id": "calculus",
+        "label": "Calculus",
+        "nodeType": "topic",
+        "tier": "free",
+        "link": "https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr"
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "calculus1",
+        "label": "Essence of Calculus",
+        "parent": "calculus",
+        "nodeType": "video",
+        "tier": "free",
+        "type": "overview",
+        "author": ["AInokoji"],
+        "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
+        "tags": ["Intro, Chain Rule"]
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "calculus2",
+        "label": "Derivatives",
+        "parent": "calculus",
+        "nodeType": "video",
+        "tier": "free",
+        "type": "definition",
+        "author": ["AInokoji"],
+        "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
+        "tags": ["Intro, Derivatives"]
+      }
+    },
+    {
+      "group": "edges",
+      "data": {
+        "target": "calculus2",
+        "source": "calculus1",
+        "type": "main",
+        "importance": 2,
+        "message": "learn about derivatives"
+      }
     }
-  },
-  {
-    "group": "nodes",
-    "data": {
-      "id": "calculus1",
-      "label": "Essence of Calculus",
-      "parent": "calculus",
-      "nodeType": "video",
-      "tier": "free",
-      "type": "overview",
-      "author": ["AInokoji"],
-      "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
-      "tags": ["Intro, Chain Rule"]
-    }
-  }
-]
+  ]
+}

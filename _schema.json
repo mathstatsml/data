@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema",
+  "title": "Cytoscape Schema",
+  "description": "Dictionary that follows https://js.cytoscape.org/",
+  "type": "object",
+  "properties": {
+    "elements": {
+      "type": "array",
+      "description": "An array of elements specified as plain objects. For convenience, this option can alternatively be specified as a promise that resolves to the elements JSON.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "group": {
+            "type": "string",
+            "description": "nodes' for a node, 'edges' for an edge",
+            "enum": ["nodes", "edges"]
+          },
+          "data": {
+            "type": "object",
+            "description": "element data",
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "(NODE ONLY) unique identifier for each node"
+              },
+              "label": {
+                "type": "string",
+                "description": "(NODE ONLY) title of the node"
+              },
+              "parent": {
+                "type": "string",
+                "description": "(NODE ONLY) parent topic node's id"
+              },
+              "nodeType": {
+                "type": "string",
+                "description": "(NODE ONLY) indicates whether a node is a topic node, video node, or bounty node",
+                "enum": ["topic", "video", "bounty"]
+              },
+              "tier": {
+                "type": "string",
+                "description": "(NODE ONLY) controls access of node to premium users",
+                "enum": ["free", "premium"]
+              },
+              "type": {
+                "type": "string",
+                "description": "(NODE ONLY) overview, definition, theorem, proof, example, exercise, research, 3blue1brown (EDGE ONLY) main, supporting, invisible",
+                "enum": [
+                  "overview",
+                  "definition",
+                  "theorem",
+                  "proof",
+                  "example",
+                  "exercise",
+                  "research",
+                  "3blue1brown",
+                  "main",
+                  "supporting",
+                  "invisible"
+                ]
+              },
+              "author": {
+                "type": "array",
+                "description": "(VIDEO NODE ONLY) list of authors",
+                "items": {
+                  "type": "string",
+                  "enum": ["AInokoji", "uzuki", "saki", "kokomi"]
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "link": {
+                "type": "string",
+                "description": "(NODE ONLY) link to the video, if video node, or playlist, if topic node"
+              },
+              "tags": {
+                "type": "array",
+                "description": "(VIDEO NODE ONLY) searchable tags",
+                "items": {
+                  "type": "string"
+                },
+                "uniqueItems": true
+              },
+              "bounty": {
+                "type": "integer",
+                "description": "(BOUNTY NODE ONLY) price bounty for publishing specified video topic"
+              },
+              "target": {
+                "type": "string",
+                "description": "(EDGE ONLY) the target node id (arrow points to this node)"
+              },
+              "source": {
+                "type": "string",
+                "description": "(EDGE ONLY) the source node id (arrow comes from this node)"
+              },
+              "importance": {
+                "type": "integer",
+                "description": "(EDGE ONLY) indicates the importance of progressing to the topic from the previous",
+                "enum": [1, 2, 3]
+              },
+              "message": {
+                "type": "string",
+                "description": "(EDGE ONLY) provide motivation for learning the specified topic after the prerequisites"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
