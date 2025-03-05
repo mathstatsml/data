@@ -20,23 +20,23 @@
         "nodeType": "video",
         "tier": "free",
         "type": "overview",
-        "author": ["AInokoji"],
-        "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
-        "tags": ["Intro, Chain Rule"]
+        "authors": ["3blue1brown"],
+        "link": "https://www.youtube.com/watch?v=WUvTyaaNkzM",
+        "tags": ["motivation", "introduction", "derivative", "integral"]
       }
     },
     {
       "group": "nodes",
       "data": {
         "id": "calculus2",
-        "label": "Derivatives",
+        "label": "Derivative",
         "parent": "calculus",
         "nodeType": "video",
         "tier": "free",
         "type": "definition",
-        "author": ["AInokoji"],
-        "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
-        "tags": ["Intro, Derivatives"]
+        "authors": ["AInokoji"],
+        "link": "https://www.youtube.com/watch?v=9vKqVkMQHKk",
+        "tags": ["instantaneous rate of change", "tangent line", "velocity"]
       }
     },
     {
@@ -46,7 +46,21 @@
         "source": "calculus1",
         "type": "main",
         "importance": 2,
-        "message": "learn about derivatives"
+        "message": "In general, a derivative measures the rate of change of the output following a tiny nudge in the input."
+      }
+    },
+    {
+      "group": "nodes",
+      "data": {
+        "id": "calculus3",
+        "label": "Product Rule",
+        "parent": "calculus",
+        "nodeType": "video",
+        "tier": "free",
+        "type": "definition",
+        "authors": ["AInokoji"],
+        "link": "https://www.youtube.com/watch?v=9vKqVkMQHKk",
+        "tags": ["instantaneous rate of change", "tangent line", "velocity"]
       }
     }
   ]

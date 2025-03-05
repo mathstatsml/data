@@ -1,0 +1,54 @@
+{
+  "name": "preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "next build",
+    "check": "next lint && tsc --noEmit",
+    "dev": "next dev --turbo",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "preview": "next build && next start",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "format:write": "prettier --write \"**/*.{ts,tsx,js,jsx,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,mdx}\" --cache"
+  },
+  "dependencies": {
+    "cytoscape": "^3.31.1",
+    "cytoscape-dagre": "^2.5.0",
+    "cytoscape-navigator": "^2.0.2",
+    "cytoscape-popper": "^4.0.1",
+    "next": "^15.0.1",
+    "react": "^18.3.1",
+    "react-cytoscapejs": "^2.0.0",
+    "react-dom": "^18.3.1",
+    "tippy.js": "^6.3.7",
+    "zod": "^3.23.3"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.4.1",
+    "@types/cytoscape-dagre": "^2.3.3",
+    "@types/cytoscape-navigator": "^2.0.3",
+    "@types/eslint": "^8.56.10",
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-cytoscapejs": "^1.2.5",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.1.0",
+    "@typescript-eslint/parser": "^8.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^15.0.1",
+    "eslint-plugin-tailwindcss": "^3.18.0",
+    "postcss": "^8.4.39",
+    "prettier": "^3.3.2",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.5.3"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.38.1"
+  },
+  "packageManager": "npm@10.8.1"
+}

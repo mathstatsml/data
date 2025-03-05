@@ -58,12 +58,12 @@
                   "invisible"
                 ]
               },
-              "author": {
+              "authors": {
                 "type": "array",
                 "description": "(VIDEO NODE ONLY) list of authors",
                 "items": {
                   "type": "string",
-                  "enum": ["AInokoji", "uzuki", "saki", "kokomi"]
+                  "enum": ["AInokoji", "3blue1brown", "saki", "kokomi"]
                 },
                 "minItems": 1,
                 "uniqueItems": true
