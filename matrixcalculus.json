@@ -21,7 +21,7 @@
         "tier": "free",
         "type": "overview",
         "authors": ["AInokoji"],
-        "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
+        "link": "https://www.youtube.com",
         "tags": ["Intro, Chain Rule"]
       }
     },
@@ -35,7 +35,7 @@
         "tier": "free",
         "type": "definition",
         "authors": ["kokomi"],
-        "link": "https://www.youtube.com/watch?v=DLkNQgh4Ons",
+        "link": "https://www.youtube.com",
         "tags": ["hi"]
       }
     },
@@ -49,7 +49,7 @@
         "tier": "free",
         "type": "definition",
         "authors": ["AInokoji"],
-        "link": "https://google.com",
+        "link": "https://www.youtube.com",
         "tags": ["bro"]
       }
     }
